@@ -1,0 +1,61 @@
+﻿/* *{
+  font-family: Verdana, sans-serif;
+  font-size: 1vw;
+  text-align: center;
+}
+*\
+
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+/* links não visitados */
+a:link{
+  color: lightseagreen;
+}
+/* links visitados */
+a:visited{
+  color: chocolate;
+}
+
+/* links no momento que são selecionados */
+
+a:active{
+  color: #a6dc6f;
+}
+
+/* quando passa o mouse em cima */
+
+a:hover{
+  color: #a6dc6f;
+}
+.iconInput { position: relative; }
+.iconInput input { padding-left: 28px }
+.iconInput i { position: absolute; padding: 5px 8px }
+#emailicon { position: absolute; padding: 6px 9px }
+/* #check { position: relative; padding: 0px 12px } */
+/*.iconInput input { padding-top: 6px }
+
+
+
+
+
+
+/*
+input[type=email]{
+  width: 20px;
+}
+input[type=password]{
+  width: 20px;
+}
+input[type=submit]{
+  width: 280px;
+}
+}
+input[type=checkbox]{
+  padding: inherit;
+}
+/* Deixar o fundo do input na cor
+
+input:focus{
+  background-color: lavender;
+}
+*/
