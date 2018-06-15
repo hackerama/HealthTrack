@@ -1,0 +1,166 @@
+<html lang="pt-br">
+<head>
+  <title> Health Track - Dashboard </title>
+
+  <meta name="keywords" content="saude, fitness, aplicativo, hipertensão, bem estar">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <script src="js/jquery-3.3.1"> </script>
+  <script src="bootstrap/js/bootstrap.min.js"> </script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" type="text/css" href="css/style3.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+
+<body>
+<header>
+<div class="container bg-info p-4">
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="#"><img src="images/lift2.jpg" title="Health Track" class="img-responsiv" max-width="80px" alt="Health Track - Wellness Monitor" id="center"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Pesos</a>
+      <a class="nav-item nav-link" href="#">Pressões Arteriais</a>
+      <a class="nav-item nav-link" href="#">Atividades</a>
+      <a class="nav-item nav-link" href="#">Alimentos Ingeridos</a>
+      <a class="nav-item nav-link" href="#">Convidar um amigo</a>
+      <a class="nav-item nav-link" href="#">Sair</a>
+    </div>
+  </div>
+</nav>
+</div>
+</header>
+<!---->
+<main>
+<div class="container my-5">
+   <div class="card-body text-center">
+<h4 class="card-title">Isaak Yudavich Azimov</h4>
+<p class="card-text">Idade: 32 Anos</p>
+</div>
+<div class="card">
+    <!-- <button id="add__new__list" type="button" class="btn btn-success position-absolute" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-plus"></i> Add a new List</button> -->
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <!-- <th scope="col">ID</th> -->
+            <th scope="col">Track</th>
+            <th scope="col">Medições</th>
+            <th scope="col">Edit List </th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" width="30">Peso</th>
+            <td>89 kg<br><small>13/05/2018<small></td>
+            <td>
+                <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-plus-circle"></i></a>
+                <a class="btn btn-xs btn-success" href="#"><i class="fa fa-list"></i></a>
+            </td>
+
+          </tr>
+          <tr>
+            <th scope="row">Pressão</th>
+            <td width="30">130/80 mmHg <br><small>13/05/2018<small></td>
+            <!-- <td>Thornton</td> -->
+            <td width="30">
+                <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-plus-circle"></i></a>
+                <a class="btn btn-xs btn-success" href="#"><i class="fa fa-list"></i></a>
+            </td>
+
+          </tr>
+          <tr>
+            <th scope="row">Atividade</th>
+            <td colspan="1">Natação<br><small>13/05/2018<small></td>
+            <td>
+                <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-plus-circle"></i></a>
+                <a class="btn btn-xs btn-success" href="#"><i class="fa fa-list"></i></a>
+            </td>
+          <tr>
+            <th scope="row">Alimentos</th>
+            <td colspan="1">Maçã<br><small>13/05/2018<small></td>
+            <td>
+                <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-plus-circle"></i></a>
+                <a class="btn btn-xs btn-success" href="#"><i class="fa fa-list"></i></a>
+            </td>
+          <tr>
+            <th scope="row">IMC</th>
+            <td width="30">27,42<br><small>13/05/2018<small></td>
+            <!-- <td>Thornton</td> -->
+            <td width="30">
+              <div class="alert alert-warning" id="imc">
+                sobrepeso
+            </td>
+
+        </tbody>
+      </table>
+</div>
+
+<div class="container">
+<div class="alert alert-warning" id="alert">
+  <strong>Atençao!</strong> Você está com sobrepeso, embora ainda não esteja obeso.
+   Algumas pessoas já podem apresentar doenças associadas como diabetes
+    e hipertensão nessa faixa de IMC. Reveja e melhore seus hábitos!
+</div>
+<!-- Large modal -->
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+      <div class="card-body text-center">
+        <h4 class="card-title">Special title treatment</h4>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+        <div class=" card col-8 offset-2 my-2 p-3">
+      <form>
+        <div class="form-group">
+          <label for="listname">List name</label>
+          <input type="text" class="form-control" name="listname" id="listname" placeholder="Enter your listname">
+        </div>
+        <div class="form-group">
+          <label for="datepicker">Deadline</label>
+          <input  type="text" class="form-control" name="datepicker" id="datepicker" placeholder="Pick up a date">
+        </div>
+        <div class="form-group">
+                                <label for="datepicker">Add a list item</label>
+            <div class="input-group">
+
+              <input type="text" class="form-control" placeholder="Add an item" aria-label="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">Go!</button>
+              </span>
+            </div>
+          </div>
+       <div class="form-group text-center">
+         <button type="submit" class="btn btn-block btn-primary">Sign in</button>
+      </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!---->
+
+<!---->
+<footer >
+<div class="container bg-info p-4">
+  <div class="footer-copyright text-center py-1">© 2018 Copyright:
+    <a href="https://healthtra.ck"> healthtra.ck</a>
+  </div>
+</div>
+</footer>
+</body>
+<html>

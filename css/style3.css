@@ -1,0 +1,57 @@
+body{
+    background-image:url(../images/sports.jpg);
+    background-repeat:no-repeat;
+    background-size: auto;
+
+}
+
+footer{
+
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.bg__card__navbar{
+	background-color: #000000;
+}
+.bg__card__footer{
+	background-color: #000000 !important;
+}
+#add__new__list{
+    top: -58px;
+    right: 0px;
+}
+
+img {
+    max-width:130px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+td small {
+  font-size: 9px;
+}
+
+h4, p {
+font-weight: bold;
+color: dark;
+text-shadow: 0.4px 0.4px 0.4px LightGray;
+}
+
+#alert {
+margin-top: 20px;
+border: 2px solid GoldenRod;
+border-radius: 5px;
+font-size: 12px;
+
+
+}
+
+#imc {
+  font-size: 10px;
+  margin-top: auto;
+  margin-bottom: 0px;
+  max-width: 91px;
+  border: 2px solid GoldenRod;
+  border-radius: 5px;
+}

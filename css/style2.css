@@ -7,8 +7,11 @@
  */
 
 body, html{
-     height: 100%;
- 	background-repeat: no-repeat;
+  height: 100%;
+  background-image:url(../images/sports.jpg);
+  background-repeat:no-repeat;
+  background-size: auto;
+
 
  	font-family: Tahoma, sans-serif;
 }
@@ -37,7 +40,7 @@ label {
 	margin-bottom: 1px;
   font-size: 12px;
   font-weight: bold;
-  color: grey;
+  color: dark;
 }
 
 
@@ -47,7 +50,7 @@ label {
   margin-top: 20px;
   font-size: 11px;
   text-align: center;
-  color: gray;
+  color: ;
   /* padding-left: 22px; */
 }
 
@@ -63,7 +66,9 @@ input::-webkit-input-placeholder {
 }
 
 .main-login{
- 	background-color: #fff;
+  background-image:url(../images/sports.jpg);
+  background-size: 600%;
+  background-color: #fff;
     /* shadows and rounded borders */
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
