@@ -1,6 +1,6 @@
 <html lang="pt-br">
 <head>
-  <title> Health Track - Dashboard </title>
+  <title> Health Track - Atividades </title>
 
   <meta name="keywords" content="saude, fitness, aplicativo, hipertensão, bem estar">
   <meta charset="utf-8">
@@ -45,7 +45,7 @@
 <div class="container my-5">
    <div class="card-body text-center">
 <h4 class="card-title">Isaak Yudavich Azimov</h4>
-<p class="card-text">Idade: 32 Anos</p>
+<p class="card-text">Histórico de Atividades</p>
 </div>
 <div class="card">
     <!-- <button id="add__new__list" type="button" class="btn btn-success position-absolute" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-plus"></i> Add a new List</button> -->
@@ -53,73 +53,66 @@
         <thead>
           <tr>
             <!-- <th scope="col">ID</th> -->
-            <th scope="col">Track</th>
-            <th scope="col">Medições</th>
-            <th scope="col">Edit List </th>
+            <th scope="col">Data</th>
+            <th scope="col">Atividade</th>
+            <th scope="col">Editar</th>
 
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row" width="30">Peso</th>
-            <td>89 kg<br><small>13/05/2018<small></td>
+            <th scope="row" width="30">13/05/2018</th>
+            <td>Natação<br><small>1h 20min<br>700 kcal<small></td>
             <td>
-                <a class="btn btn-xs btn-primary" href="../peso.html"><i class="fa fa-plus-circle"></i></a>
-                <a class="btn btn-xs btn-success" href="../peso.html"><i class="fa fa-list"></i></a>
+                <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-edit"></i></a>
+                <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-trash"></i></a>
             </td>
 
           </tr>
           <tr>
-            <th scope="row">Pressão</th>
-            <td width="30">130/80 mmHg <br><small>13/05/2018<small></td>
+            <th scope="row">11/05/2018</th>
+            <td width="30">Corrida<br><small>1h 00min<br>500 kcal<small></td>
             <!-- <td>Thornton</td> -->
             <td width="30">
-                <a class="btn btn-xs btn-primary" href="press.html"><i class="fa fa-plus-circle"></i></a>
-                <a class="btn btn-xs btn-success" href="press.html"><i class="fa fa-list"></i></a>
+                <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-edit"></i></a>
+                <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-trash"></i></a>
             </td>
 
           </tr>
           <tr>
-            <th scope="row">Atividade</th>
-            <td colspan="1">Natação<br><small>13/05/2018<small></td>
+          <th scope="row">10/05/2018</th>
+            <td colspan="1">CrossFit<br><small>50min<br>800 kcal<small></td>
             <td>
-                <a class="btn btn-xs btn-primary" href="atividades.html"><i class="fa fa-plus-circle"></i></a>
-                <a class="btn btn-xs btn-success" href="atividades.html"><i class="fa fa-list"></i></a>
+                <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-edit"></i></a>
+                <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-trash"></i></a>
             </td>
           <tr>
-            <th scope="row">Alimentos</th>
-            <td colspan="1">Maçã<br><small>13/05/2018<small></td>
+            <th scope="row">08/05/2018</th>
+            <td colspan="1">Natação<br><small>45 min<br>700 kcal<small></td>
             <td>
-                <a class="btn btn-xs btn-primary" href="alimento.html"><i class="fa fa-plus-circle"></i></a>
-                <a class="btn btn-xs btn-success" href="alimento.html"><i class="fa fa-list"></i></a>
+                <a class="btn btn-xs btn-primary" href="#"><i class="fa fa-edit"></i></a>
+                <a class="btn btn-xs btn-danger" href="#"><i class="fa fa-trash"></i></a>
             </td>
-          <tr>
-            <th scope="row">IMC</th>
-            <td width="30">27,42<br><small>13/05/2018<small></td>
-            <!-- <td>Thornton</td> -->
-            <td width="30">
-              <div class="alert alert-warning" id="imc">
-                sobrepeso
-            </td>
+            <tr>
+              <th scope="row" width="30"></th>
 
+              <td align="center" width"33,3%">
+                  <a class="btn btn-xs btn-primary" href="dash.html"><i class="fa fa-arrow-circle-left"></i></a>
+                  <a class="btn btn-xs btn-success" href="#"><i class="fa fa fa-plus-circle"></i></a>
+              <td width="33,3%"></td>
+              </td>
         </tbody>
       </table>
 </div>
 
-<div class="container">
-<div class="alert alert-warning" id="alert">
-  <strong>Atençao!</strong> Você está com sobrepeso, embora ainda não esteja obeso.
-   Algumas pessoas já podem apresentar doenças associadas como diabetes
-    e hipertensão nessa faixa de IMC. Reveja e melhore seus hábitos!
-</div>
-</div>
+
 </div>
 </div>
 </main>
 <!---->
 
 <!---->
-<footer id="foot">
+<footer id="foot" >
 <div class="container bg-info p-4">
   <div class="footer-copyright text-center py-1">© 2018 Copyright:
     <a href="https://healthtra.ck"> healthtra.ck</a>

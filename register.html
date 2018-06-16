@@ -2,7 +2,7 @@
 
 <html lang="pt-br">
 <head>
-  <title> Health Track - Pagina de Login </title>
+  <title> Health Track - Cadastre-Se! </title>
 
   <meta name="keywords" content="saude, fitness, aplicativo, hipertensão, bem estar">
   <meta charset="utf-8">
@@ -12,7 +12,6 @@
 
   <script src="js/jquery-3.3.1"> </script>
   <script src="bootstrap/js/bootstrap.min.js"> </script>
-  <!-- Website Font style -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 	<!-- Google Fonts -->
@@ -27,23 +26,36 @@
 		<div class="container">
       <img src="images/lift2.jpg" title="Health Track" class="img-responsiv" max-width="80px" alt="Health Track - Wellness Monitor" id="center">
       <div class="row main">
-
-      <!--<div class="panel-heading text-center"> -->
-	             <!--  <div class="panel-title text-center"> -->
-
-	               <!--	</div> -->
-	    </div>
-      <!-- <form method="get" action="/dash.html"> -->
+      </div>
 				<div class="main-login main-center">
-					<form class="form-horizontal" method="get" action="/dash.html">
+					<form class="form-horizontal" method="get" action="/index.html"> <!-- correto ==> post / "#" -->
 
+						<div class="form-group">
+              <label for="name" class="cols-sm-2 control-label">Seu Nome</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id="name"  placeholder="Digite seu nome"/>
+								</div>
+              </div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Seu Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" id="email"  placeholder="Digite seu email"/>
+								</div>
+							</div>
+						</div>
 
 						<div class="form-group">
 							<label for="username" class="cols-sm-2 control-label">Nome de Usuário</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="username" id="username"  placeholder="Digite seu email ou Nome de Usuário"/>
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="username" id="username"  placeholder="Escolha um Nome de Usuário"/>
 								</div>
 							</div>
 						</div>
@@ -58,35 +70,33 @@
 							</div>
 						</div>
 
-
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Confirme sua Senha</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirme sua Senha"/>
+								</div>
+							</div>
+						</div>
+            <br>
+						<div class="form-group ">
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button">Registre-se</button>
+						</div>
             <div class="form-group ">
-							<button type="submit" class="btn btn-primary btn-lg btn-block login-button">Entrar</button>
+							<button type="submit" class="btn btn-success btn-lg btn-block login-button">Login</button>
 						</div>
 					<!--	<div class="login-register">
 				            <a href="index.php">Login</a>
 				         </div> -->
-
-          <div class= "form-row">
-            <div class="col-6">
-                <label ><input type="checkbox" id=check> Salvar senha</label>
-              </div>
-            <div class="col-6">
-                <a href="recuperar.html"> Esqueci minha senha </a>
-              </div>
-          </div>
-              <div class="form">
-                  <p id ="reg">Não é registrado ainda? <a href="test.html">Cadastre-se!</a></p>
-              </div>
-
-
-          </form>
+					</form>
 				</div>
 			</div>
 		</div>
 
 		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <!-- Footer -->
-<footer class="page-footer font-small cyan darken-3 mt-4">
+<footer class="page-footer font-small cyan darken-3 mt-4" id="foot">
 
   <!-- Footer Links -->
   <div class="container">
